@@ -17,12 +17,16 @@ body {
   background-color: black;
 }
 
-.container {
+#container {
   display: flex;
 }
-.container figure {
+#container figure {
   border: 20px;
   padding-left: 10px;
   color: white;
   /* margin-right: 10em; */
+}
+
+.video{
+  flex-wrap: wrap;
 }
