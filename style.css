@@ -1,29 +1,28 @@
-body{
-    background-color: black;
-    
+body {
+  background-color: black;
 }
 
 #navbar {
-    display: flex;
+  display: flex;
   justify-content: center;
 }
 .navbar-nav {
   font-size: 20px;
-  color: #c50d72
+  color: #c50d72;
 }
 
 .navweb {
   font-weight: bold;
-  color: rgb(255, 0, 157);
+  color: #ff009d;
+  background-color: black;
 }
 
 .container {
-    display: flex;
-    
+  display: flex;
 }
 .container figure {
-    border: 20px;
-    padding-left: 10px;
-    color: white;
-    /* margin-right: 10em; */
+  border: 20px;
+  padding-left: 10px;
+  color: white;
+  /* margin-right: 10em; */
 }
