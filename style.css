@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+    
+}
+
+#navbar {
+    display: flex;
+  justify-content: center;
+}
+.navbar-nav {
+  font-size: 20px;
+  color: white;
+}
+
+.navweb {
+  font-weight: bold;
+  background-color: orange;
+  color: black;
+}
+
+.container {
+    display: flex;
+    
+}
+.container figure {
+    border: 20px;
+    padding-left: 10px;
+    /* margin-right: 10em; */
+}
