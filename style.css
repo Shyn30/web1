@@ -9,13 +9,12 @@ body{
 }
 .navbar-nav {
   font-size: 20px;
-  color: white;
+  color: #c50d72
 }
 
 .navweb {
   font-weight: bold;
-  background-color: orange;
-  color: black;
+  color: rgb(255, 0, 157);
 }
 
 .container {
@@ -25,5 +24,6 @@ body{
 .container figure {
     border: 20px;
     padding-left: 10px;
+    color: white;
     /* margin-right: 10em; */
 }
