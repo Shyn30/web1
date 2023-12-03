@@ -57,7 +57,7 @@ body {
   color: var(--whit);
   display: inline-block;
   font-size: 1.4rem;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 /* dibawah ini buat hover bbiar ketika cursor ke itemsnya warnanya berubah */
 .navbar .navbar-nav a:hover {
@@ -301,6 +301,7 @@ footer .socials a {
   color: var(--whit);
   margin: 1rem;
 }
+
 footer .socials a:hover {
   color: var(--bg);
   transition: 0.4s;
@@ -313,12 +314,17 @@ footer .links {
 footer .links a {
   color: var(--whit);
   padding: 2rem 0.6rem;
+  font-weight: 500;
 }
 footer .links a:hover {
   color: var(--bg);
   transition: 0.4s;
 }
 /* credit */
+footer .credit{
+
+}
+
 footer .credit a {
   color: var(--bg);
   font-weight: bold;
@@ -349,7 +355,7 @@ footer .credit a {
     top: 100%;
     right: -100%;
     background-color: white;
-    width: 30rem;
+    width: 23rem;
     height: 100vh;
     transition: 0.4s;
   }
@@ -409,7 +415,11 @@ footer .credit a {
   .contact .row form{
     padding-top: 0;
   }
+
+
 }
+
+
 
 /* tablet end */
 /* mobile */
