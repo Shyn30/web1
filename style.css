@@ -239,10 +239,12 @@ body {
 /* menusection end */
 
 /* contact section start */
+
 .contact .row {
   display: flex;
   margin-top: 2rem;
   background-color: #222;
+  margin-bottom: 5rem;
 }
 .contact .row .map {
   flex: 1 1 45rem;
@@ -291,7 +293,8 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 0rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.7rem;
+  padding-top: 1rem;
 }
 /* socials */
 footer .socials a {
