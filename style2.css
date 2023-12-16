@@ -1,0 +1,64 @@
+*{
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Whisper', cursive;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: none;
+    
+    background-image: url('img-rvn/bgQuotes.jpg');
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 50px;
+    font-size: xx-large;
+    
+}
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .quotes {
+    width: 50%;
+    display: grid;
+    /* margin-top: 20px; */
+    /* margin: 50px; */
+    margin-bottom: 20px;
+}
+.container .quotes p{
+    font-weight: 600;
+    font-size: x-large;
+}
+.tanggal {
+    margin-top: 10vh;
+    margin-right: 30vh;
+    
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+}
+.shyn{
+    margin-top: 2vh;
+    margin-right: 30vh;
+    
+    display: flex;
+    justify-content: end;
+    font-weight: 600;
+}
+
+
+
+
+
+
