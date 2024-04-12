@@ -70,6 +70,7 @@ body {
   border-bottom: 0.1rem solid var(--primary);
   transform: scaleX(0);
 }
+
 .navbar .navbar-nav a:hover::after {
   transform: scaleX(0.5);
   transition: 0.2s linear;
