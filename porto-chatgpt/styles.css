@@ -63,6 +63,29 @@ body {
   padding-top: 70px; /* Sesuaikan tinggi header Anda */
 }
 
+/* Style home section */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-image img {
+  width: 150px; /* Sesuaikan ukuran foto profil Anda */
+  height: 150px; /* Sesuaikan ukuran foto profil Anda */
+  border-radius: 50%; /* Membuat foto profil menjadi lingkaran */
+  border: 3px solid #333; /* Memberi border pada foto profil */
+  margin-bottom: 20px; /* Spasi antara foto profil dan teks */
+}
+
+.profile-details p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
 /* Style sections */
 section {
   padding: 50px;
