@@ -1,0 +1,150 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* pastikan navbar berada di atas konten lain */
+  display: flex;
+  justify-content: space-between; /* Menata item-header agar berada di antara kiri dan kanan */
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Pusatkan vertikal menu */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Memberikan jarak antara item menu */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Menghapus margin kiri dari item pertama */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Menambahkan spasi di bawah header */
+body {
+  padding-top: 70px; /* Sesuaikan tinggi header Anda */
+}
+
+/* Style sections */
+section {
+  padding: 50px;
+}
+
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style skills */
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill img {
+  max-width: 100%;
+}
+
+.skill h3 {
+  margin-top: 15px;
+}
+
+.skill p {
+  color: #555;
+}
+
+/* Style gallery */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#gallery">My Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <!-- Your home content goes here -->
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <img src="skill1.jpg" alt="Skill 1">
+            <h3>Skill 1</h3>
+            <p>Description of Skill 1 goes here.</p>
+        </div>
+        <div class="skill">
+            <img src="skill2.jpg" alt="Skill 2">
+            <h3>Skill 2</h3>
+            <p>Description of Skill 2 goes here.</p>
+        </div>
+    </section>
+
+
+    <section id="gallery">
+        <h2>My Gallery</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="gallery1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="gallery2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="gallery3.jpg" style="width:100%">
+            </div>
+            <!-- tambahkan gambar sesuai kebutuhan -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <!-- Your contact content goes here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik
+        }
+        </script>
+        
+</body>
+
+</html>
