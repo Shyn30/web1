@@ -5,29 +5,47 @@
   box-sizing: border-box;
 }
 
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Style header */
 header {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  position: fixed; /* Navbar akan tetap di atas layar */
-  width: 100%; /* Navbar akan mengisi lebar layar */
-  z-index: 1000; /* Membuat navbar ada di atas konten lain */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ /* pastikan navbar berada di atas konten lain */
+  display: flex;
+  justify-content: space-between; /* Menata item-header agar berada di antara kiri dan kanan */
 }
 
-header h1 {
-  margin: 0;
+nav {
+  display: flex;
+  align-items: center; /* Pusatkan vertikal menu */
 }
 
 nav ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px; /* Memberikan jarak antara item menu */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Menghapus margin kiri dari item pertama */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
 }
 
 nav ul li {
@@ -40,39 +58,18 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Style sections */
-section {
-  padding: 100px 20px; /* Padding atas dan bawah diperbesar agar konten tidak tertutup oleh navbar */
-}
-
-/* Style footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-/* Make navbar responsive */
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: block;
-    text-align: center;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-}
-
-
 /* Menambahkan spasi di bawah header */
 body {
-  padding-top: 70px; /* Sesuaikan tinggi header Anda */
+  padding-top: 15vh; /* Sesuaikan tinggi header Anda */
 }
 
 /* Style home section */
+#home{
+  /* margin-top: 1000px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
 .profile {
   display: flex;
   justify-content: center;
@@ -96,22 +93,17 @@ body {
 
 
 /* Style sections */
-section {
+/* section {
   padding: 50px;
   text-align: center;
-    align-items: center;
-}
+} */
 
-
-/* Style footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
 
 /* Style skills */
+#skills{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .skill {
   margin-bottom: 30px;
 }
@@ -129,6 +121,10 @@ footer {
 }
 
 /* Style gallery */
+#gallery{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -181,4 +177,28 @@ footer {
   }
 }
 
+/* sytyle contact */
+#contact{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+/* style all section */
+section{
+  text-align: center;
+  align-items: center;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
