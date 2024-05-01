@@ -23,8 +23,16 @@
 
     <section id="home">
         <h2>Home</h2>
-        <!-- Your home content goes here -->
+        <div class="profile">
+            <div class="profile-image">
+                <img src="profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <p>Networking | Computer</p>
+            </div>
+        </div>
     </section>
+
 
     <section id="skills">
         <h2>My Skills</h2>
@@ -62,8 +70,23 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <!-- Your contact content goes here -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </section>
+
 
     <footer>
         <p>&copy; 2024 My Portfolio. All rights reserved.</p>
@@ -73,24 +96,24 @@
     <script>
         var slideIndex = 0;
         showSlides();
-        
+
         function plusSlides(n) {
-          showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
-        
+
         function showSlides() {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > slides.length) {slideIndex = 1}
-          slides[slideIndex-1].style.display = "block";
-          setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Ganti gambar setiap 2 detik
         }
-        </script>
-        
+    </script>
+
 </body>
 
 </html>
